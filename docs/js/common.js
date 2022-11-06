@@ -7,7 +7,7 @@ const menu = [
 ];
 
 const renderMenu = () => menu.map((page) => {
-    return page.url === location.pathname.replace(/\//g, '')
+    return 'portfolio' + page.url === location.pathname.replace(/\//g, '')
         ? `<span class="button button-primary">${page.title}</span>`
         : `<a class="button" href="${location.origin}/portfolio/${page.url}">${page.title}</a>`;
 }).join(' &nbsp; ');
