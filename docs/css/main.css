@@ -1,0 +1,29 @@
+@import 'normalize.css';
+@import 'skeleton.css';
+@import '//fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic';
+
+
+h1 { cursor: pointer }
+.mt0 { margin-top: 0 }
+
+.row-block {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.image-block {
+    width: 180px;
+    padding-top: 10px;
+}
+
+.image-block img {
+    border: 1px solid #ccc;
+}
+
+.description-block {
+    padding-left: 40px;
+}
+
+.description-block h3 {
+    margin-top: 0;
+}
