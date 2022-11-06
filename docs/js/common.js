@@ -9,7 +9,7 @@ const menu = [
 const renderMenu = () => menu.map((page) => {
     return page.url === location.pathname.replace(/\//g, '')
         ? `<span class="button button-primary">${page.title}</span>`
-        : `<a class="button" href="${location.origin}/${page.url}">${page.title}</a>`;
+        : `<a class="button" href="${location.origin}/portfolio/${page.url}">${page.title}</a>`;
 }).join(' &nbsp; ');
 
 const renderHeader = () => `
@@ -21,7 +21,7 @@ const renderHeader = () => `
 <hr class="mt0">
 
 <div class="container">
-    ${renderMenu('/sites/')}
+    ${renderMenu()}
 </div>
 
 <hr>    
